@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Various Input Types</title>
+</head>
+<body>
+    <div><h2>These are the various "input" types available in HTML :</h2></div>
+    <div>
+        <table cellspacing="20">
+            <thead align="left">
+                <th><strong>Type</strong></th>
+                <th><strong>Sample</strong></th>
+                <th><strong>Description</strong></th>
+            </thead>
+            <tbody>
+                <form action="">
+                    <tr>
+                        <td>
+                            <label for=""><em>button</em></label>
+                        </td>
+                        <td>
+                            <input type="button" value="Just a button">
+                        </td>
+                        <td>
+                            A push button with no default behaviour and displays the value of value attribute
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>checkbox</em></label>
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            A checkbox allowing something to be selected/deselected
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>color</em></label>
+                        </td>
+                        <td>
+                            <input type="color">
+                        </td>
+                        <td>
+                            Opens a colo(u)r picker
+                        </td>
+                    </tr>
+                    <tr>
+\                        <td>
+                            <label for=""><em>date</em></label>
+                        </td>
+                        <td>
+                            <input type="date">
+                        </td>
+                        <td>
+                            Allows entering date. No time. Format is dd/mm/yyyy. Opens date picker in supported browsers
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>datetime-local</em></label>
+                        </td>
+                        <td>
+                            <input type="datetime-local">
+                        </td>
+                        <td>
+                            Allows entering date and time. No TZ. Opens date picker in supported browsers
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>email</em></label>
+                        </td>
+                        <td>
+                            <input type="email">
+                        </td>
+                        <td>
+                            Looks like text but has validation parameters for HTML5 checks on email format. Also has relevant keyboard support.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>file</em></label>
+                        </td>
+                        <td>
+                            <input type="file">
+                        </td>
+                        <td>
+                            Presents a browse button to choose a file
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>hidden</em></label>
+                        </td>
+                        <td>
+                            <input type="hidden" value="Le value obscure">
+                        </td>
+                        <td>
+                            A hidden control. Not visible but its value is submitted to the server
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>image</em></label>
+                        </td>
+                        <td>
+                            <input type="image" alt="login" src="images/login-icon.jpg">
+                        </td>
+                        <td>
+                            Submit button, allows you to provide your own image.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>month</em></label>
+                        </td>
+                        <td>
+                            <input type="month">
+                        </td>
+                        <td>
+                            Allows entering month and year but no TZ.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>number</em></label>
+                        </td>
+                        <td>
+                            <input type="number" min="10", max="25">
+                        </td>
+                        <td>
+                            A control for entering numbers. Can specify min/max.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>password</em></label>
+                        </td>
+                        <td>
+                            <input type="password">
+                        </td>
+                        <td>
+                            A password textbox 
+                        </td>
+                    </tr>
+                    <tr>
+\                        <td>
+                            <label for=""><em>radio</em></label>
+                        </td>
+                        <td>
+                            <input type="radio">
+                        </td>
+                        <td>
+                            A radio button
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>range</em></label>
+                        </td>
+                        <td>
+                            <input type="range" min="1" max="100">
+                        </td>
+                        <td>
+                            Provides min/max range selector. Where numbers are not important, so they are not even shown on screen
+                        </td>
+                    </tr>
+                    <tr>
+\                        <td>
+                            <label for=""><em>reset</em></label>
+                        </td>
+                        <td>
+                            <input type="reset">
+                        </td>
+                        <td>
+                            Rests the form contents. <em>Not recommended</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>search</em></label>
+                        </td>
+                        <td>
+                            <input type="search">
+                        </td>
+                        <td>
+                            Single line search field. Line breaks are automatically removed. 
+                        </td>
+                    </tr>
+                    <tr>
+\                        <td>
+                            <label for=""><em>submit</em></label>
+                        </td>
+                        <td>
+                            <input type="submit">
+                        </td>
+                        <td>
+                            Le classico submit button
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>tel</em></label>
+                        </td>
+                        <td>
+                            <input type="tel">
+                        </td>
+                        <td>
+                            A control for entering phone number. Might display a phone keypad on some devices with "dynamic keypads"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>text</em></label>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            Single line text field. Line breaks are automatically removed
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>time</em></label>
+                        </td>
+                        <td>
+                            <input type="time">
+                        </td>
+                        <td>
+                            Allows entering time but no TZ
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>url</em></label>
+                        </td>
+                        <td>
+                            <input type="url">
+                        </td>
+                        <td>
+                            Looks like text field but has validation checks
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for=""><em>week</em></label>
+                        </td>
+                        <td>
+                            <input type="week">
+                        </td>
+                        <td>
+                            A control for entering date consisting of week-year number and a week number with no TZ.
+                        </td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
